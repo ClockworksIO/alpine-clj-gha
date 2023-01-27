@@ -12,6 +12,8 @@ outputs:
     description: 'Babashka version of the environment.'
   babashka_path:
     description: 'Path to the Babashka executable.'
+  dummy_out:
+    description: 'Just a dummy for testing.'
 runs:
   using: 'docker'
   image: 'Dockerfile'

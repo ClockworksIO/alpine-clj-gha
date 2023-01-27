@@ -2,6 +2,4 @@
 
 /usr/local/bin/bb -f /run.clj
 
-#echo "hello"
-
-#/bin/bash "$@"
+echo "dummy_out=well what ever" >> $GITHUB_OUTPUT
