@@ -1,0 +1,17 @@
+# action.yaml
+name: 'Setup Clojure Tooling'
+description: 'Setup environment to run Clojure including tooling'
+outputs:
+  java_version:
+    description: 'Java version of the environment.'
+  clojure_version:
+    description: 'Clojure version of the environment.'
+  clojure_path:
+    description: 'Path to the Clojure executable.'
+  babashka_version:
+    description: 'Babashka version of the environment.'
+  babashka_path:
+    description: 'Path to the Babashka executable.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
