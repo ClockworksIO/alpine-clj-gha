@@ -17,4 +17,4 @@ jobs:
         run: echo "The time was ${{ join(steps.hello.outputs.*, '\n') }}"
       #
       - name: test bb
-        run: bb '(inc 2)'
+        run: /usr/local/bin/bb '(inc 2)'

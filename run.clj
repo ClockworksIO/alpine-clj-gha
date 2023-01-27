@@ -14,11 +14,11 @@
 
 (def java-version (-> (sh "java -version") :out str/split-lines first))
 
-(spit GH-OUTPUT (format "java_version=%s/n" java-version) :append true)
-(spit GH-OUTPUT (format "clojure_path=%s/n" clj-path) :append true)
-(spit GH-OUTPUT (format "clojure_version=%s/n" clojure-version) :append true)
-(spit GH-OUTPUT (format "babashka_path=%s/n" babashka-path) :append true)
-(spit GH-OUTPUT (format "babashka_version=%s/n" babashka-version) :append true)
+(spit GH-OUTPUT (format "java_version=%s\n" java-version) :append true)
+(spit GH-OUTPUT (format "clojure_path=%s\n" clj-path) :append true)
+(spit GH-OUTPUT (format "clojure_version=%s\n" clojure-version) :append true)
+(spit GH-OUTPUT (format "babashka_path=%s\n" babashka-path) :append true)
+(spit GH-OUTPUT (format "babashka_version=%s\n" babashka-version) :append true)
 
 ; (sh (format "echo \"java_version=%s\" >> $GITHUB_OUTPUT" java-version))
 ; (sh (format "echo \"clojure_path=%s\" >> $GITHUB_OUTPUT" clj-path))
